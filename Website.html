@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
@@ -7,33 +6,41 @@
 
 
 * {
-    margin: 5;
     padding: 0;
     box-sizing: border-box;
 }
 
+.header {
+  padding: 30px;
+  text-align: center;
+  color: #FFF;
+  font-size: 40px;
+
+}
+
 body {
-    height: 100vh;
-    background: #FFF;
+    margin: 0;
+    min-height: 100vh;
+    background-color: #0075FF;
     font-family: "Roboto", sans-serif;
 }
 
 nav {
-    box-shadow:
-  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
-  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
-  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
-  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
-  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
-  100px 100px 80px rgba(0, 0, 0, 0.07)
-;
-    border-radius: 15px;  
+    margin: 0 1%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+    border-radius: 15px;
     display: flex;
     justify-content: space-between;
     padding: 15px 5%;
     align-items: center;
     background: #18283B;
+    width: 98%;
+    transition: ease-in-out .5s;
 }
+
+
+
+
 
 .logo {
     color: #FFF;
@@ -96,14 +103,24 @@ ul li a.active {
 /****************************/
 
 
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  border-radius: 0px;
+  transition: ease-in-out .5s;
+}
+
+.sticky + .box {
+  margin-top: 183px;
+
+}
+/*******************************/
 .box {
-  box-shadow:
-  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-  0 12.5px 10px rgba(0, 0, 0, 0.06),
-  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-  0 100px 80px rgba(0, 0, 0, 0.12)
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 ;
 
   
@@ -112,27 +129,29 @@ ul li a.active {
   width: 50vw;
   margin: 100px auto;
   background: white;
-  border-radius: 5px;
+  border-radius: 30px;
 }
-
-
 
 
 
     </style>
 </head>
 <body>
-    <nav>
+    <div class="header">
+        <h2>Smart Security Doorbell</h2>
+        <p></p>
+      </div>
+    <nav id = "navbar">
         <div class="logo">Internet of Things Project - Andrew Fox</div>
         <input type="checkbox" id="checkbox">
         <label for="checkbox" id="icon">
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
         </label>
-        <ul>
+        <ul >
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Project</a></li>
-            <li><a href="#">Login</a></li>
+            <li><a href="#">Video</a></li>
+            <li><a href="Login.html">Login</a></li>
         </ul>
     </nav>
 
@@ -141,5 +160,38 @@ ul li a.active {
             <iframe width="560" height="560" src="http://192.168.1.10:81/stream"></iframe>
         </p>
     </div>
+    <h1>
+        Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+
+Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+
+Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+
+Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+
+Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+
+Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+
+Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+    </h1>
 </body>
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+
+
+
+
+    </script>
 </html>
