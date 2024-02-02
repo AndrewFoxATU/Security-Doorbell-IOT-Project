@@ -35,6 +35,10 @@
 // ===========================
 // Enter your WiFi credentials
 // ===========================
+
+//const char* ssid = "VODAFONE-GOLD";
+//const char* password = "voda123456";
+
 const char* ssid = "Iphone";
 const char* password = "12345678";
 
