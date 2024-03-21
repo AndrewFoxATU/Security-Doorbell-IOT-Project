@@ -10,6 +10,7 @@
 # nov 20 // motion detected on esp32
 # dec 1  // motion displayed on websetver using AJAX live server updates
 # dec 10 // live esp32-cam stream on website
+# feb 17 // bug fixes for website
 # mar 1  // created doorbell code
 # mar 17 // combined the Motion detector with the doorbell code
 # https://codepen.io/nickpettit/pen/NWwevq
