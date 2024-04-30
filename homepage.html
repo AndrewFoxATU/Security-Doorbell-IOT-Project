@@ -182,13 +182,13 @@ ul li a.active {
 
     <script>
         window.onscroll = function () {
-            sticky()
+            sticky1()
         };
 
         var navbar = document.getElementById("navbar");
         var sticky = navbar.offsetTop;
 
-        function sticky() {
+        function sticky1() {
             if (window.pageYOffset >= sticky) {
                 navbar.classList.add("sticky")
             } else {
